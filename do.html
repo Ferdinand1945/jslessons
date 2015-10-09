@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var valor;
+        do {
+            valor = prompt('digite un valor entre1 y 999', '');
+            //numero es parseInt
+            valor = parseInt(valor);
+            document.write(+valor+ ' tiene ');
+            if (valor < 10) {
+                
+                document.write('el valor tiene 1 digito');
+                
+            }
+            else if(valor > 10 && valor < 100) {
+                
+                document.write('ta, el valor tiene 2 digitos');
+            }
+            else {
+                document.write('el valor tiene 3 digitos');
+                
+            }
+            document.write('<br />');
+        }while (valor!=0);
+    
+    
+    </script>
+</body>
+</html>
