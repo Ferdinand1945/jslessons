@@ -1,0 +1,38 @@
+<html>
+<head>
+
+    
+    
+    </head>
+<body>
+        <script type="text/javascript">
+    var nombre;
+        var num1, num2, num3;
+            nombre = prompt('nombre del alumno', '');
+        num1 = prompt('escribir nota 1 ', '');
+        num2 = prompt('escribir nota 2 ', '');
+        num3 = prompt('escribir nota 3 ', '');
+        //los convierto a parseInt por que son numeros
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        num3 = parseInt(num3);
+        //declaro el promedio
+         var promedio;
+        promedio = (num1+num2+num3) /3;
+        //condicionales
+        if (promedio >= 7) {
+        document.write('el alumno '+nombre+ ' ha aprobado con '+promedio);
+        
+        }
+        else if(promedio >= 4) {
+            document.write('el alumno '+nombre+ ' paso pero con '+promedio);
+        }
+        else if(promedio < 4) {
+        document.write('reeeeprobaste amigo y tu pedorra nota fue '+promedio);
+        
+        }
+    </script>
+    </body>
+
+
+</html>

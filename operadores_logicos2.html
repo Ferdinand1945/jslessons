@@ -1,0 +1,27 @@
+<html>
+<head>
+    
+    
+    </head>
+<body>
+    <script type="text/javascript">
+    var dia, mes, ano;
+        dia = prompt('escribi el dia ', '');
+        mes = prompt('escribi el mes ', '');
+        ano = prompt('escribi el año ', '');
+    //son numeros asi que los paso a parseINT
+    dia = parseInt(dia);
+        mes = parseInt(mes);
+        ano = parseInt(ano);
+        //condicion con ||
+        if (mes==1 || mes == 2 || mes == 3) {
+        document.write('el mes '+mes+ ' pertence al primer trimestre del año');
+        }
+        else {
+        document.write('el mes '+mes+ ' no pertence al primer trimestre del año');
+        }
+    </script>
+    
+    </body>
+
+</html>
