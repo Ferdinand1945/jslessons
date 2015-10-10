@@ -1,0 +1,27 @@
+<html>
+<head>
+    
+    
+    </head>
+<body>
+    <script type="text/javascript">
+      //numeros comprendidos 
+      //eso significa que es una cadena entre un numero inferior y uno superior pasando por todos los comprendidos entre inferior y superior... ejemplo inferior: 4 -- superior: 8 --> 4 5 6 7 8
+      function mostrarContent(x1, x2){
+      var inicio;
+        for (inicio=x1; inicio<=x2; inicio++){
+        document.write(inicio+ ' ');
+        
+        }
+      }
+      var valor1 = prompt('valor inferior', '');
+      var valor2 = prompt('valor superior', '');
+      valor1 = parseInt(valor1);
+      valor2 = parseInt(valor2);
+      
+      mostrarContent(valor1, valor2);
+    </script>
+       
+    </body>
+
+</html>
