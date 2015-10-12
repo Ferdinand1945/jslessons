@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+  <script type="text/javascript">
+  var selec = prompt('Ingrese un valor del 1 al 10', '');
+  selec = parseInt(selec);
+  //declaro num
+    var num;
+    num = parseInt(Math.random()*10)+1;
+    if (num == selec){
+      document.write('gano el numero que se sorteo es el '+num);
+    }
+    else {
+      document.write('lo siento el numero es erroneo. El numero correcto era '+num+ ' y ud eligio '+selec);
+      
+    }
+  
+  </script>
+  
+  
+  </body>
+
+</html>
