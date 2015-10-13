@@ -3,22 +3,19 @@
   <head>
     <title>Github API</title>
     <script src="js/jquery.js"></script>
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
   <body>
     <div id="w">
       <h1>Get repos</h1>
       <p>Enter a Github username</p>
       <input type="text" name="ghusername" id="ghusername" placeholder="GitHub Username...">
-
       <a href="#" id="ghsubmitbtn">Pull User Data</a>
-
       <div id="ghapidata" class="clearfix"></div>
-
     </div>
     <script type="text/javascript">
-    
-      
+
+
       $(function(){
         $('#ghsubmitbtn').on('click', function(e){
           e.preventDefault();
@@ -28,8 +25,8 @@
           var requri='http://api.github.com/users/'+username;
           var repouri='http://api.github.com/users/'+username+'/repos';
           requestJSON(requri, function(json){
-            
-            
+
+
 
             if (json.message == "Not Found" || username == ''){
               $('#ghapidata').html("<h2>No user Info FOund</h2>");
@@ -72,19 +69,16 @@
             }
           });          
         });
-        
-          function requestJSON(url, callback) {
-        $.ajax({
-          url: url,
-          complete: function(xhr){
-            callback.call(null, xhr.responseJSON);
 
-          }
-
-        });
-       }
-});
-
+        function requestJSON(url, callback) {
+          $.ajax({
+            url: url,
+            complete: function(xhr){
+              callback.call(null, xhr.responseJSON);
+            }
+          });
+        }
+      });
 
     </script>
 
