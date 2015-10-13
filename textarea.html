@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+  <script type="text/javascript">
+  function controlarCaracteres() {
+    if(document.getElementById('curriculum').value.length>50 || document.getElementById('curriculum').value.length<=3) {
+      alert('El CV no puede contener mas de 2000 caracteres o menos de 1');
+    }
+    else {
+      alert('largo del documento correcto');
+    }
+  }
+  
+  
+  </script>
+  
+  <form>
+  <textarea id="curriculum" rows="10" cols="50"></textarea>
+    <br>
+    <input type="button" value="controlar" onclick="controlarCaracteres()">
+  </form>
+  </body>
+</html>

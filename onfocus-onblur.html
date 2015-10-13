@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+  <script type="text/javascript">
+  function vaciar(control) {
+    control.value='';
+  }
+    function verificarEntrada(control) {
+      if (control.value=='') {
+         alert('Debe ingresar datos!');
+      }
+    }
+    function verifica(){
+      if(document.getElementById('nombre').value.length<=2) {
+        alert('the name must have at least 3 characters');
+      }
+    }
+
+  </script>
+  <form>
+  <input type="text" id="nombre" onfocus="vaciar(this)" onblur="verificarEntrada(this)" value="nombre"><br>
+  <input type="text" id="edad" onfocus="vaciar(this)" onblur="verificarEntrada(this)" value="edad"><br>
+  <input type="button" value="Confirmar" onclick="verifica()">
+  </form>
+  
+  </body>
+
+
+</html>

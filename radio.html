@@ -1,0 +1,38 @@
+<html>
+<head></head>
+<body>
+  <script type="text/javascript">
+  function mostrarEstudios() {
+    if(document.getElementById('radio1').checked){
+      alert('no tienes estudios');
+    }
+    else if (document.getElementById('radio2').checked) {
+      alert('tienes estudios primarios');
+    }
+        else if (document.getElementById('radio3').checked) {
+      alert('tienes estudios secundarios');
+    }
+        else{
+      alert('tienes estudios universitarios');
+    }
+  }
+  
+  
+  </script>
+  <form>
+  <input type="radio" id="radio1"> No tiene estudios
+    <br>
+    <input type="radio" id="radio2"> Tiene estudios primarios
+    <br>
+     <input type="radio" id="radio3"> Tiene estusdios secundarios
+    <br>
+     <input type="radio" id="radio4"> Tiene estudios terciarios
+    <br>
+    <input type="button" onclick="mostrarEstudios()" value="mostrar">
+  
+  
+  
+  </form>
+  </body>
+
+</html>
